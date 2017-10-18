@@ -1,0 +1,205 @@
+<html>
+<head>
+   <title>cwiczenie</title>
+   <meta charset="utf-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatibile" content="ie=edge">
+   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="css/style1.css" rel="stylesheet" type="text/css"/>
+<script src="scripts/script2.js" type="text/javascript"></script>
+<!--    <link rel="stylesheet" href="fonts/css/font-awesome.min.css"> -->
+<!--   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/> -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+   <!-- <script  type="text/javascript" src="scripts/bootstrap-exercise.js"></script> -->
+
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Style
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Wegetariańska</a>
+          <a class="dropdown-item" href="#">Wegańska</a>
+          <a class="dropdown-item" href="#">Owocowe</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Koszyk<span class="badge badge-success mx-1"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Zamówienia</a>
+      </li>      
+    </ul>
+  </div>
+</nav>
+    
+    <div class="content alert alert-success fade">
+  <strong>Udało się</strong> Twoje zamówienie zostało złożone
+</div>
+    
+<div id="carouselExampleIndicators" class="carousel slide h-50 w-50 " data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active ">
+      <img class="d-block img-fluid h-100" src="http://pizzawieza.pl/assets/img/banner_pizzawieza.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid h-100" src="http://pizzeriasandra.pl/wp-content/uploads/revslider/pizza/home_pizza_slider_1.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid h-100" src="http://pizzadallas.pl/img/bg_pic1.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>  
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+             <img class="d-block img-thumbnail h-25 my-3" src="http://pizzawieza.pl/assets/img/banner_pizzawieza.jpg" alt="First slide">    
+             <h3 class="p-3">Pizza 1</h3>
+             <p>Opis</p>
+             <button type="button" class="btn btn-primary m-3" id="pizza1" data-toggle="modal" data-target="#myModal">Zamów</button>
+            </div>
+            <div class="col-4">
+             <img class="d-block img-thumbnail h-25 my-3" src="http://pizzeriasandra.pl/wp-content/uploads/revslider/pizza/home_pizza_slider_1.png" alt="First slide">    
+             <h3 class="p-3">Pizza 2</h3>
+             <p>Opis</p>
+             <button type="button" class="btn btn-primary m-3" id="pizza2" data-toggle="modal" data-target="#myModal">Zamów</button>
+            </div>
+            <div class="col-4">
+             <img class="d-block img-thumbnail h-25 my-3" src="http://pizzadallas.pl/img/bg_pic1.jpg" alt="First slide">    
+             <h3 class="p-3">Pizza 3</h3>
+             <p>Opis</p>
+             <button type="button" class="btn btn-primary m-3" id="pizza3" data-toggle="modal" data-target="#myModal">Zamów</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="col-3 mx-auto">
+            
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Wybierz dodatki</h5>
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Pomidory</span>
+</label>
+          <label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Szynka</span>
+</label>
+          <label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Dodatkowy ser</span>
+</label>
+          <label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Sos czosnkowy</span>
+</label>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+        <button type="button" class="btn btn-primary pay">Zapłać</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </div>    
+<!--        <nav class="navbar navbar-default navbar-light bg-light">
+            <div class="container-fluid">              
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link">Menu</a></li>
+                <li class="nav-item"><a class="nav-link">Style</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+                </li>
+                <li class="nav-item"><a class="nav-link">Koszyk</a></li>
+                <li class="nav-item"><a class="nav-link">Zamówienie</a></li>
+            </ul>
+               
+            </div>
+        </nav>
+-->    
+<!--
+   <div class="row">  
+       <div class="btn-success btn-sm col-md-3 justify-text-center">Kliknij</div>
+        <div class="form-group row col-md-4">
+            <input type="hidden" id="inputSuccess" class="form-control"  name="input-success">
+
+            <div class="form-control-feedback"></div>
+       </div>
+       <div class="col-md-3 alert"></div>
+   </div>
+   <div class="row">  
+       <div class="btn btn-danger col-md-3">Błąd</div>
+   </div>
+   <div class="row">  
+       <div class="btn btn-warning col-md-3">Ostrzeżenie</div>
+   </div>
+   <div class="row">  
+       <div class="btn btn-primary col-md-3">Info</div>
+   </div>  -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+
+<!--
+   <script  type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+   <script  type="text/javascript" src="scripts/tether.min.js"></script>
+   <script  type="text/javascript" src="scripts/bootstrap.min.js"></script>
+   <script  type="text/javascript" src="scripts/exercise.js"></script>
+-->
+</body>
+</html>
+
+
+
