@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    $(".dropdown-button").dropdown();
+     $('.carousel').carousel();
+});
+
+$(document).ready(function(){
     //ukrycie zbędnych elementów
     $('.row').hide();
     $('.badge').hide();
